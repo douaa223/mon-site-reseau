@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masque de Sous-Réseau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Masque de Sous-Réseau</h1>
+    </header>
+
+    <section>
+        <h2>Définition</h2>
+        <p>Le masque de sous-réseau est utilisé pour séparer une adresse IP en partie réseau et partie hôte.</p>
+        <h3><blockquote>-Comment représente-t-on un masque de sous réseau?</h3>
+            Un masque de sous-réseau ressemble à une adresse IP W. X. Y . Z
+            Le masque de sous-réseau sépare conceptuellement l'adresse IP en deux parties : la partie réseau,
+            identifiant le réseau spécifique, et la partie hôte, identifiant un dispositif unique au sein de ce réseau.
+            Cette séparation est cruciale pour le routage des paquets de données sur Internet et au sein des
+            réseaux locaux, garantissant que les données atteignent la bonne destination.
+            Chaque bit du masque indique si le bit correspondant dans l'adresse IP appartient à la partie réseau
+            (bit à 1) ou à la partie hôte (bit à 0). </p>
+        <img src="images/masque.png" alt="Illustration du masque de sous-réseau">
+    </section>
+
+    <button onclick="retourAccueil()">Retour</button>
+
+    <script>
+        function retourAccueil() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>

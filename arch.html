@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masque de Sous-Réseau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Architecture</h1>
+    </header>
+
+    <section>
+        <h2> 1. Architecture Client / Serveur</h2>
+            <p>L’architecture client/serveur est basée sur le fait que des machines clientes
+            communiquent avec un serveur qui leur fournit des services (programmes,
+            fichiers, etc.). Les services sont exploités par des programmes appelés
+            programmes clients qui s’exécutent sur les machines clientes. </p>
+            <p><strong>Le serveur :</strong> c’est un ordinateur généralement plus puissant que les autres
+                connectés au réseau qui centralise les ressources partagées.
+                <strong>Les clients : sont de simples stations de travail, qui exploitent les ressources
+                mises à leur disposition par le serveur. </strong></p>
+                <img src="images/arch.png" >
+                <h2>2. Architecture poste à poste (égale à égale : P2P) </h2>
+                    <p>Dans ce type d’architecture il n’y a pas de serveur dédié, tous les ordinateurs
+                    sont égaux, chacun reste indépendant, tout en mettant certaines ressources à
+                    la disposition des autres. Ils sont utilisés pour des applications qui ne
+                    nécessitent pas un haut niveau de sécurité ni une disponibilité maximale.</p>
+                    <img src="images/arch2.png" alt="">
+    </section>
+
+    <button onclick="retourAccueil()">Retour</button>
+
+    <script>
+        function retourAccueil() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
